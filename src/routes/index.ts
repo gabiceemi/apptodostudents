@@ -4,13 +4,9 @@ import userRouter from './user.routes';
 
 //import userController from '../controller/userController';
 
-
 const routes = Router();
 
-
 routes.use('/users',userRouter);
-
-
 
 //Rotas de Usuário
 

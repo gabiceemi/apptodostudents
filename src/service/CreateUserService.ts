@@ -8,13 +8,12 @@ interface Request {
     password: string;
     institution : string;
     avatar: string; 
-    created_at: string;
-    updated_at: string; 
+    
 }
 
 class CreateUserService{
     
-    public async execute({name, email, password, institution, avatar, created_at, updated_at}: Request): Promise<User>{
+    public async execute({name, email, password, institution, avatar}: Request): Promise<User>{
 
         const userRepository = getRepository(User);
 
@@ -32,8 +31,7 @@ class CreateUserService{
             password,
             institution ,
             avatar,
-            created_at,
-            updated_at,
+            
         });
 
         await userRepository.save(user);
