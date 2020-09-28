@@ -1,22 +1,16 @@
 import { Router } from 'express';
 
-import userRouter from './user.routes';
-
-//import userController from '../controller/userController';
-
+import usersRouter from './users.routes';
 
 const routes = Router();
 
+routes.use('/users', usersRouter);
 
-routes.use('/users',userRouter);
+// Rotas de Usuário
 
-
-
-//Rotas de Usuário
-
-//Lista todos os Usuários
-//routes.get('/users',userController.index);
-//Cria um Usuário
-//routes.post('/users',userController.create);
+// Lista todos os Usuários
+// routes.get('/users',userController.index);
+// Cria um Usuário
+// routes.post('/users',userController.create);
 
 export default routes;
