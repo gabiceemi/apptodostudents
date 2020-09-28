@@ -18,5 +18,4 @@ routes.use('/users',userRouter);
 //routes.get('/users',userController.index);
 //Cria um Usuário
 //routes.post('/users',userController.create);
-
 export default routes;

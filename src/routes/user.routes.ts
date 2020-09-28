@@ -7,9 +7,9 @@ const userRouter = Router();
 
 userRouter.post('/', async (request, response)=>{
       try {
-              const { name } = request.body;
+              
 
-              console.log(name);
+              console.log(request);
 
           return response.json();
           
